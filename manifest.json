@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "我的起始页",
+  "version": "1.0",
+  "description": "自定义起始页 + 一键保存当前网页",
+  "permissions": ["storage", "activeTab", "scripting", "contextMenus"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "_chrome_url_overrides": {
+    "newtab": "startpage.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

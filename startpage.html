@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的起始页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="page-title">📑 我的起始页</h1>
+
+  <!-- 添加分组 -->
+  <div class="add-group-bar">
+    <input type="text" id="newGroupName" placeholder="新分组名称">
+    <button id="addGroupBtn" class="btn">新增分组</button>
+  </div>
+
+  <!-- 分组容器 -->
+  <div id="groupsContainer"></div>
+
+  <!-- 批量操作 -->
+  <div class="bulk-actions">
+    <button id="deleteSelectedBtn" class="btn danger">删除选中</button>
+    <button id="moveSelectedBtn" class="btn">移动选中</button>
+    <select id="moveGroupSelect" class="btn select-btn">
+      <option value="">选择分组</option>
+      <option value="__new__">➕ 新建分组</option>
+    </select>
+  </div>
+
+  <script src="startpage.js"></script>
+</body>
+</html>
